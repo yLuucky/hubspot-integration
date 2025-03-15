@@ -40,10 +40,13 @@ hubspot.redirect-uri=your_redirect_uri
 server.port=8080
 
 # Database Configuration
-spring.datasource.url=jdbc:postgresql://localhost:5432/hubspot_integration
-spring.datasource.username=postgres
+spring.datasource.url=jdbc:h2:mem:hubspotdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=user
 spring.datasource.password=password
-spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
 ```
 
 ## Usage
