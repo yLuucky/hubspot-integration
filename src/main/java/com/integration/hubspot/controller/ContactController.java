@@ -29,7 +29,7 @@ public class ContactController {
      * Criação de Contatos:
      * Endpoint que faz a criação de um Contato no CRM através da API do HubSpot.
      *
-     * @param ContactDTO DTO com os dados do contato
+     * @param contactDTO DTO com os dados do contato
      * @return Contato criado
      */
     @PostMapping
